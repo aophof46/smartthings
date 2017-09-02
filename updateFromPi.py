@@ -9,10 +9,11 @@ import pprint
 import requests
 import time
 import subprocess
+from conf import *
  
 #client id and client secret
-client = '<client ID>'
-access_token='<access token>'
+client = clientid
+access_token = accesstoken
   
 base_dir = '/sys/bus/w1/devices/'
 device_folder = glob.glob(base_dir + '28*')[0]
